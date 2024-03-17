@@ -2,6 +2,7 @@
   "name": "suel-a-sheldon",
   "module": "index.ts",
   "devDependencies": {
+    "@biomejs/biome": "1.6.1",
     "@types/bun": "latest"
   },
   "peerDependencies": {
@@ -9,5 +10,6 @@
   },
   "type": "module",
   "trustedDependencies": [
+    "@biomejs/biome"
   ]
 }
