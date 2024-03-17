@@ -1,7 +1,9 @@
 import { initServer } from './src/server';
-import { initDb } from './src/db';
+import TxtDb from './src/db';
 
 console.log('Hello via Bun!');
 
-await initDb();
+await TxtDb.init();
 initServer();
+
+TxtDb.list();

@@ -8,8 +8,15 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "type": "module",
   "trustedDependencies": [
     "@biomejs/biome"
-  ]
+  ],
+  "type": "module",
+  "dependencies": {
+    "csv": "^6.3.8"
+  },
+  "scripts": {
+    "lint": "biome lint .",
+    "format": "biome format ."
+  }
 }
