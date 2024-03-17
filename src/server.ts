@@ -4,4 +4,7 @@ const serverConfiguration = {
   },
 };
 
-export default serverConfiguration;
+export function initServer() {
+  const server = Bun.serve(serverConfiguration);
+  console.log(`Listening on ${server.url}`);
+}
