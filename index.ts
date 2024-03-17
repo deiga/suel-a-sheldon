@@ -1,5 +1,7 @@
-import server from './src/server';
+import serverConfiguration from './src/server';
 
 console.log('Hello via Bun!');
 
-Bun.serve(server);
+const server = Bun.serve(serverConfiguration);
+
+console.log(`Listening on ${server.url}`);

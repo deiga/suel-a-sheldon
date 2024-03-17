@@ -1,7 +1,7 @@
-const server = {
+const serverConfiguration = {
   fetch(req: Request) {
     return new Response('Bun!');
   },
 };
 
-export default server;
+export default serverConfiguration;
